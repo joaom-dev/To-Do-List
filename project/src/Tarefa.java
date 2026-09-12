@@ -3,11 +3,11 @@ public class Tarefa {
 
     private Integer id;
     private String descricao;
-    private boolean concluida;
+    private boolean status;
 
     public Tarefa(String descricao) {
         this.descricao = descricao;
-        this.concluida = false;
+        this.status = false;
     }
 
     public void setId(Integer id) {
@@ -24,13 +24,17 @@ public class Tarefa {
         return descricao;
     }
 
-    public void setConcluida(Boolean concluida){
-        this.concluida = concluida;
+    public void setStatus(Boolean status){
+        this.status = status;
     }
-    public boolean getConcluida() {
-        return concluida;
+    public boolean getStatus() {
+        return status;
     }
 
+
+    public String getStatusDescricao() {
+        return status ? "concluido" : "pendente";
+    }
 
 }
 

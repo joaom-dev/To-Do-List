@@ -8,7 +8,7 @@ public class List {
         this.scan = scan;
     }
 
-    private ArrayList<Tarefa> tarefas = new ArrayList<>();
+    private ArrayList<Tarefa> tarefas = new ArrayList<Tarefa>();
 
     public void createTarefa() {
         System.out.println("==CADASTRO DE TAREFAS==");
@@ -22,7 +22,7 @@ public class List {
     }
 
     public void listarTarefas() {
-        tarefas.forEach(tarefa -> System.out.println("ID: " + tarefa.getId() + "\nDescrição: " + tarefa.getDescricao() + "\nStatus\n: " + tarefa.getConcluida()));
+        tarefas.forEach(tarefa -> System.out.println("ID: " + tarefa.getId() + "\nDescrição: " + tarefa.getDescricao() + "\nStatus: " + tarefa.getStatusDescricao()));
     }
 
     public void marcarConcluido() {
