@@ -30,11 +30,10 @@ public class Main {
 
                 case 2:
                     // listar tarefa
-
                     if (!adicionado) {
                         System.out.println("CADASTRAR TAREFA NA LISTA PARA LISTAR");
                     } else {
-
+                    lista.listarTarefas();
                     }
                     break;
 

@@ -22,7 +22,7 @@ public class List {
     }
 
     public void listarTarefas() {
-
+        tarefas.forEach(tarefa -> System.out.println("ID: " + tarefa.getId() + "\nDescrição: " + tarefa.getDescricao() + "\nStatus\n: " + tarefa.getConcluida()));
     }
 
     public void marcarConcluido() {
