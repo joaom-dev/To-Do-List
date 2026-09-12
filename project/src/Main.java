@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         List lista = new List(scan);
+        boolean adicionado = false;
 
         int opcao = -1;
 
@@ -23,18 +24,38 @@ public class Main {
             switch (opcao) {
                 case 1:
                     // cadastrar tarefa
+                    lista.createTarefa();
+                    adicionado = true;
                     break;
 
                 case 2:
                     // listar tarefa
+
+                    if (!adicionado) {
+                        System.out.println("CADASTRAR TAREFA NA LISTA PARA LISTAR");
+                    } else {
+
+                    }
                     break;
 
                 case 3:
                     //marcar como concluido
+
+                    if (!adicionado) {
+                        System.out.println("CADASTRAR TAREFA NA LISTA PARA MARCAR COMO CONCLUIDO");
+                    } else {
+
+                    }
                     break;
 
                 case 4:
                     // deletar tarefa
+
+                    if (!adicionado) {
+                        System.out.println("CADASTRAR TAREFA NA LISTA PARA DELETAR TAREFA");
+                    } else {
+
+                    }
                     break;
 
                 case 0:
