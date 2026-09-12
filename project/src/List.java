@@ -26,11 +26,37 @@ public class List {
     }
 
     public void marcarConcluido() {
-
+        System.out.println("DiGITE O ID DA TAREFA PARA SER CONCLUIDA: ");
+        Integer idScan = scan.nextInt();
+        for (Tarefa tarefa : tarefas) {
+            if (tarefa.getId() == idScan) {
+                tarefa.setStatus(true);
+                System.out.println("TAREFA MARCADA COMO CONCLUIDA!");
+                return;
+            }
+        }
+        System.out.println("TAREFA NAO ENCONTRADA");
     }
 
     public void deleteTarefa() {
+        System.out.println("DIGITE O ID DA TAREFA PARA DELETAR A TAREFA: ");
+        Integer idDelete = scan.nextInt();
 
+        Tarefa tarefaParaRemover = null;
+
+        for (Tarefa tarefa : tarefas) {
+            if (tarefa.getId() == idDelete) {
+                tarefaParaRemover = tarefa;
+                break;
+            }
+        }
+        if (tarefaParaRemover != null) {
+            tarefas.remove(tarefaParaRemover);
+            System.out.println("TAREFA REMOVIDA!");
+        }
+        else {
+            System.out.println("TAREFA NAO ENCONTRADA");
+        }
     }
 
 

@@ -32,8 +32,9 @@ public class Main {
                     // listar tarefa
                     if (!adicionado) {
                         System.out.println("CADASTRAR TAREFA NA LISTA PARA LISTAR");
-                    } else {
-                    lista.listarTarefas();
+                    }
+                    else {
+                        lista.listarTarefas();
                     }
                     break;
 
@@ -42,8 +43,9 @@ public class Main {
 
                     if (!adicionado) {
                         System.out.println("CADASTRAR TAREFA NA LISTA PARA MARCAR COMO CONCLUIDO");
-                    } else {
-
+                    }
+                    else {
+                        lista.marcarConcluido();
                     }
                     break;
 
@@ -52,8 +54,9 @@ public class Main {
 
                     if (!adicionado) {
                         System.out.println("CADASTRAR TAREFA NA LISTA PARA DELETAR TAREFA");
-                    } else {
-
+                    }
+                    else {
+                        lista.deleteTarefa();
                     }
                     break;
 
