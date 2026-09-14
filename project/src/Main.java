@@ -10,14 +10,17 @@ public class Main {
         int opcao = -1;
 
         do {
-            System.out.println("====LISTA DE TAREFAS====");
-            System.out.println("1- Cadastrar tarefa");
-            System.out.println("2- Listar tarefas");
-            System.out.println("3- Marcar como concluido");
-            System.out.println("4- Deletar tarefa");
-            System.out.println("0- Sair\n");
+        	System.out.println("\n==============================");
+        	System.out.println("       LISTA DE TAREFAS");
+        	System.out.println("==============================");
+        	System.out.println("1 - Cadastrar tarefa");
+        	System.out.println("2 - Listar tarefas");
+        	System.out.println("3 - Marcar como concluído");
+        	System.out.println("4 - Deletar tarefa");
+        	System.out.println("0 - Sair");
+        	System.out.println("==============================");
 
-            System.out.println("ESCOLHA UMA OPCAO ACIMA: ");
+        	System.out.print("\nEscolha uma opção: ");
             opcao = scan.nextInt();
             scan.nextLine();
 

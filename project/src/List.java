@@ -11,7 +11,7 @@ public class List {
     private ArrayList<Tarefa> tarefas = new ArrayList<Tarefa>();
 
     public void createTarefa() {
-        System.out.println("==CADASTRO DE TAREFAS==");
+        System.out.println("\n==CADASTRO DE TAREFAS==");
         System.out.println("DIGITE A DESCRICAO DA TAREFA");
         String descricaoScan = scan.nextLine();
         Tarefa tarefa = new Tarefa(descricaoScan);
@@ -22,11 +22,11 @@ public class List {
     }
 
     public void listarTarefas() {
-        tarefas.forEach(tarefa -> System.out.println("ID: " + tarefa.getId() + "\nDescrição: " + tarefa.getDescricao() + "\nStatus: " + tarefa.getStatusDescricao()));
+        tarefas.forEach(tarefa -> System.out.println("\nID: " + tarefa.getId() + "\nDescrição: " + tarefa.getDescricao() + "\nStatus: " + tarefa.getStatusDescricao()));
     }
 
     public void marcarConcluido() {
-        System.out.println("DiGITE O ID DA TAREFA PARA SER CONCLUIDA: ");
+        System.out.println("\nDiGITE O ID DA TAREFA PARA SER CONCLUIDA: ");
         Integer idScan = scan.nextInt();
         for (Tarefa tarefa : tarefas) {
             if (tarefa.getId() == idScan) {
@@ -35,11 +35,11 @@ public class List {
                 return;
             }
         }
-        System.out.println("TAREFA NAO ENCONTRADA");
+        System.out.println("\nTAREFA NAO ENCONTRADA");
     }
 
     public void deleteTarefa() {
-        System.out.println("DIGITE O ID DA TAREFA PARA DELETAR A TAREFA: ");
+        System.out.println("\nDIGITE O ID DA TAREFA PARA DELETAR A TAREFA: ");
         Integer idDelete = scan.nextInt();
 
         Tarefa tarefaParaRemover = null;
@@ -52,10 +52,10 @@ public class List {
         }
         if (tarefaParaRemover != null) {
             tarefas.remove(tarefaParaRemover);
-            System.out.println("TAREFA REMOVIDA!");
+            System.out.println("\nTAREFA REMOVIDA!");
         }
         else {
-            System.out.println("TAREFA NAO ENCONTRADA");
+            System.out.println("\nTAREFA NAO ENCONTRADA");
         }
     }
 
