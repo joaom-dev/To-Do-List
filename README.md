@@ -1,8 +1,11 @@
-# To-Do-List <p align="right">
-<img alt="Java" title="Java" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/> <img alt="Git" title="Git" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+# To-Do-List 
+<p align="left">
+<img alt="Java" title="Java" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+<img alt="Git" title="Git" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
 <img alt="GitHub" title="GitHub" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
 <img alt="Eclipse" title="Eclipse" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"/>
 <img alt="IntelliJ IDEA" title="IntelliJ IDEA" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"/>
+</p>
 
 A simple Java console application developed to manage a list of daily tasks.
 
@@ -18,10 +21,20 @@ The project was created to practice fundamental Java and Object-Oriented Program
 
 ## Project Structure
 
-The application is organized into two main classes:
+The application is organized into three main classes:
 
 * `Main`: Responsible for the application flow, user interaction, and interactive menu.
-* `List`: Responsible for the task management logic and business rules, including adding, listing, completing, and removing tasks.
+* `List`: Responsible for task management and business rules, including adding, listing, completing, and removing tasks.
+* `Tarefa`: Represents the task entity, defining the attributes that a task should have, such as ID, description, and completion status. The class applies encapsulation by keeping its attributes private and providing controlled access through getters and setters.
 
-The separation between the main application flow and business logic helps keep the code organized and makes the project easier to understand and maintain.
+The separation between the main application flow, business logic, and task representation helps keep the code organized and makes the project easier to understand and maintain.
 
+## Team Members
+
+* Joao Marcos Marques Silva
+* Julia Medeiros Evangelista
+* Lara Pereira Alves
+* Joao Gabriel Soares Alves da Silva
+* Esther da Silva Marques
+* Anna Yasmin Alves Ferreira
+* Heveli Ribeiro Pereira
