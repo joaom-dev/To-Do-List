@@ -38,3 +38,7 @@ The separation between the main application flow, business logic, and task repre
 * Esther da Silva Marques
 * Anna Yasmin Alves Ferreira
 * Heveli Ribeiro Pereira
+
+## Instructor
+
+* Hudson Neves e Silva
